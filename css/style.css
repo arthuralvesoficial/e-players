@@ -380,6 +380,14 @@ justify-content: start;
     cursor: pointer;
 
 }
+.cabecalho .fa-bars{
+color: var(--purble);
+font-size: 2em;
+margin-left: 2em;
+}
+
+
+
 @media screen and (max-width: 600px){} 
 .campeã{
 right: 0%;
@@ -457,6 +465,43 @@ width: 94%;
 }
 
 
+}
+/* fim media max 760px */
+
+@media screen and (max-width:460px){
+.cabecalho .fa-bars{
+display: block;
+
+}
+
+.cabecalho div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 0 2em;
+}
+
+#menu{
+    position: absolute;
+    top:73px;
+    background-color: #1E1C21;
+    width: 100%;
+    display: none;
+}
+.cabecalho ul{
+    flex-direction: column;
+    height: 250px;
+}
+.cabecalho ul a{
+    padding: 0.5em 80% 1em 0.5em;
+    margin: 0.1em 0;
+}
 
 
+
+.campea{
+    display: none;
+
+}
 }

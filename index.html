@@ -9,18 +9,25 @@
     <script src="https://kit.fontawesome.com/525a7ba6e9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
     <header>
         <div class="container cabecalho">
-            <a href="index.html">
-                <img src="img/Logo.svg" alt="Logo do site e-players">
-            </a>
-            <nav>
+            <div>
+                <a href="#" onclick="botaoMenu()">
+                    <i class="fas fa-bars"></i>
+                </a>
+                    <a href="index.html">
+                    <img src="img/Logo.svg" alt="Logo do site e-players">
+                </a>
+            </div>
+            <nav id="menu">
                 <ul>
                     <li><a href="index.html" title="ir até o inici">INÍCIO</a></li>
                     <li><a href="index.html#horarios" title="Ir até a sessão de horário das partidas">HORÁRIOS</a></li>
-                    <li><a href="index.html#resultados" title="ir até a sessão dos resultados das partidas">RESULTADOS</a></li>
+                    <li><a href="index.html#resultados"
+                            title="ir até a sessão dos resultados das partidas">RESULTADOS</a></li>
                     <li><a href="index.html#noticias" title="Ir Até a Sessão de noticias">NOTÍCIAS</a></li>
                     <li>
                         <a href="#" title="Buscar conteudo no site"></title><i class="fas fa-search"></i>
@@ -158,8 +165,8 @@
             <section class="recentes" id="resultados">
                 <h3>PARTIDAS RECENTES</h3>
                 <div class="resultado">
-                        
-                    <div class = "times">
+
+                    <div class="times">
                         <strong>SK</strong>
                         <img src="img/SK.png" alt="Logo da SK Gaming">
                         <i>VS</i>
@@ -174,7 +181,7 @@
                     </div>
                 </div>
                 <div class="resultado">
-                    <div class = "times">
+                    <div class="times">
                         <strong>SK</strong>
                         <img src="img/SK.png" alt="Logo da SK Gaming">
                         <i>VS</i>
@@ -189,7 +196,7 @@
                     </div>
                 </div>
                 <div class="resultado">
-                    <div class = "times">
+                    <div class="times">
                         <strong>SK</strong>
                         <img src="img/SK.png" alt="Logo da SK Gaming">
                         <i>VS</i>
@@ -204,7 +211,7 @@
                     </div>
                 </div>
                 <div class="resultado">
-                    <div class = "times">
+                    <div class="times">
                         <strong>SK</strong>
                         <img src="img/SK.png" alt="Logo da SK Gaming">
                         <i>VS</i>
@@ -219,7 +226,7 @@
                     </div>
                 </div>
                 <div class="resultado">
-                    <div class = "times">
+                    <div class="times">
                         <strong>SK</strong>
                         <img src="img/SK.png" alt="Logo da SK Gaming">
                         <i>VS</i>
@@ -234,7 +241,7 @@
                     </div>
                 </div>
                 <div class="resultado">
-                    <div class = "times">
+                    <div class="times">
                         <strong>SK</strong>
                         <img src="img/SK.png" alt="Logo da SK Gaming">
                         <i>VS</i>
@@ -249,7 +256,7 @@
                     </div>
                 </div>
                 <div class="resultado">
-                    <div class = "times">
+                    <div class="times">
                         <strong>SK</strong>
                         <img src="img/SK.png" alt="Logo da SK Gaming">
                         <i>VS</i>
@@ -322,7 +329,22 @@
         <p>©‎ 2077 SENAI Eletronic Sports - Todos os direitos reservaods</p>
 
     </footer>
+    <script>
+        function botaoMenu() { 
 
+        var m = document.getElementById("menu");
+        if (m.style.display == "block") {
+            m.style.display = "none";
+        } else {
+            m.style.display = "block"
+
+        }
+
+}
+
+
+
+    </script>
 
 
 
